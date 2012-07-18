@@ -1,0 +1,12 @@
+[user]
+    name = Anton V. Yanchenko
+    email = simplylizz@gmail.com
+
+[color]
+    ui = auto
+
+[mergetool "gvimdiff3"]
+    cmd = gvim -f -d \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
+
+[merge]
+    tool = gvimdiff3
