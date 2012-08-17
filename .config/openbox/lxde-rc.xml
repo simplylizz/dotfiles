@@ -290,7 +290,8 @@
         </keybind>
         <keybind key="A-F2">
             <action name="Execute">
-                <command>lxpanelctl run</command>
+                <!--<command>lxpanelctl run</command>-->
+                <command>gmrun</command>
             </action>
         </keybind>
         <keybind key="C-Escape">
