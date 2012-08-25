@@ -12,12 +12,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-flake8'
 Bundle 'klen/python-mode'
 
-let g:pymode_folding = 0
+let g:pymode_folding=0
 
 filetype plugin indent on     " required!
 
@@ -29,7 +27,7 @@ filetype plugin indent on     " required!
 set expandtab
 
 " A four-space tab indent width is the prefered coding style for Python (and everything else!),
-" although of course some disagree. This page generally assumes you want 4-space indents.set tabstop = 4
+" although of course some disagree. This page generally assumes you want 4-space indents.set tabstop=4
 set tabstop=4
 
 " This allows you to use the < and > keys from VIM's visual (marking) mode to block indent/unindent regions
@@ -55,7 +53,7 @@ vmap <silent> <F9> <esc>:w<CR>:!%:p<CR>
 imap <silent> <F9> <esc>:w<CR>:!%:p<CR>
 
 " Set Python dic set dictionary=~/.vim/dic/python
-let python_highlight_all = 1
+let python_highlight_all=1
 
 " setlocal keywordprg=pydoc
 
@@ -99,11 +97,11 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 " NERDTree
 "autocmd vimenter * if !argc() | NERDTree | endif
-let g:NERDTreeWinPos = "left"
+let g:NERDTreeWinPos="left"
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 syntax enable
-set background=light
+set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
 let g:solarized_visibility="high"
@@ -113,9 +111,8 @@ set listchars=trail:\
 colorscheme solarized
 highlight ColorColumn ctermbg=black guibg=black
 
-
 filetype plugin on
-"let g:pydiction_location = '~/.vim/complete-dict'
+"let g:pydiction_location='~/.vim/complete-dict'
 
 function! ResCur()
     if line("'\"") <= line("$")
@@ -133,8 +130,8 @@ let NERDTreeIgnore=['\.pyc$']
 
 " Rope AutoComplete
 let ropevim_vim_completion=1
-let ropevim_extended_complete = 1
-let g:ropevim_autoimport_modules = ["os.*","traceback","django.*", "xml.etree"]
+let ropevim_extended_complete=1
+let g:ropevim_autoimport_modules=["os.*","traceback","django.*", "xml.etree"]
 imap <c-space> <C-R>=RopeCodeAssistInsertMode()<CR>
 
 autocmd BufWritePost *.py call Flake8()
