@@ -1,6 +1,11 @@
-[submodule ".vim/bundle/vundle"]
-	path = .vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "vundle"]
+    path = .vim/bundle/vundle
+    url = https://github.com/gmarik/vundle.git
+
+[submodule "omz"]
+    path = .oh-my-zsh
+    url = https://github.com/robbyrussell/oh-my-zsh.git
+
+[submodule "obvious"]
+    path = .config/awesome/obvious
+    url = https://github.com/hoelzro/obvious.git
