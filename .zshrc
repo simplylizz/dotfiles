@@ -102,3 +102,6 @@ local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)"
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}$(print "%{\e[1;34m%}%n%{\e[0m%}@%{\e[1;34m%}%M%{\e[0m%}") %~ %{$reset_color%}$ '
 
 alias wo="workon"
+
+unsetopt correctall
+unsetopt correct
