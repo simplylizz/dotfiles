@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
-# export ZSH=/Users/sp/.oh-my-zsh
 export ZSH=~/.oh-my-zsh
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,9 +57,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -82,26 +81,31 @@ source $ZSH/oh-my-zsh.sh
 
 
 ##### FROM OLD ZSH CONFIG ####
-# PIP
-export PIP_REQUIRE_VIRTUALENV=true
-
-# virtualenvwrapper
-export WORKON_HOME=$HOME/.venvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-source /usr/local/bin/virtualenvwrapper.sh
 
 ## shortcuts for ctrl+del/arrows
 #bindkey '^[[1;5D' emacs-backward-word
 #bindkey '^[[1;5C' emacs-forward-word
 #bindkey -M emacs '^[[3;5~' delete-word
 
-RPS1="(%*) %(?.:).:()"
-RPS1="(%*)"
-#PS1="[$(print '%{\e[1;34m%}%n%{\e[0m%}@%{\e[1;34m%}%M%{\e[0m%}') %~]$ "
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)"
 PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}$(print "%{\e[1;34m%}%n%{\e[0m%}@%{\e[1;34m%}%M%{\e[0m%}") %~ %{$reset_color%}$ '
 
-alias wo="workon"
-
 unsetopt correctall
 unsetopt correct
+
+export LESS="--no-init --quit-if-one-screen $LESS"
+
+# option+left/right bindings
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[[D"  backward-word
+bindkey "^[[C" forward-word
+
+# search cmd history with regex
+bindkey '^R' history-incremental-pattern-search-backward
+
+eval "$(jump shell)"
+
+alias ls="exa"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
