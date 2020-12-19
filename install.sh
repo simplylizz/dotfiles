@@ -9,3 +9,6 @@ cp -rf .vimrc .vim .zshrc* .oh-my-zsh .gitconfig .gitignore_global .config ~/
 vim +BundleInstall +qall
 
 ln -s com.googlecode.iterm2.plist  $HOME/Library/Preferences/com.googlecode.iterm2.plist
+
+mkdir -p $HOME/.ssh
+cp .ssh/config $HOME/.ssh/
