@@ -6,12 +6,13 @@ set -e
 # More cli tools to check:
 # https://devzen.ru/episode-0312/
 homebrew install \
-    vim \
-    git \
-    rg \
-    fd \
     exa \
+    fd \
     fzf \
+    git \
+    gitk \
     jump \
-    mdcat
+    mdcat \
+    rg \
+    vim \
 
