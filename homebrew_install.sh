@@ -11,9 +11,9 @@ homebrew install \
     fzf \
     git \
     gitk \
+    go \
     jump \
     mdcat \
     rg \
     vim \
-    go \
 
