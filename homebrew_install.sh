@@ -15,4 +15,5 @@ homebrew install \
     mdcat \
     rg \
     vim \
+    go \
 
