@@ -8,12 +8,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'morhetz/gruvbox'
-Bundle 'scrooloose/nerdtree'
-Bundle 'klen/python-mode'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'micha/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
+Plugin 'scrooloose/nerdtree'
+Plugin 'klen/python-mode'
+Plugin 'zxqfl/tabnine-vim'
 
 let g:pymode_folding = 0
 "let g:pymode_lint = 0  " temp attempt to fix hangs :(
@@ -92,8 +93,8 @@ filetype plugin indent on
 
 " TODO: move this to py-only filetype
 "iab ipdb import ipdb; ipdb.set_trace()
-imap ``` import debug  # noqa
-nmap ``` oimport debug  # noqa<esc>:w<cr>
+"imap ``` import debug  # noqa
+"nmap ``` oimport debug  # noqa<esc>:w<cr>
 
 map <F6> :NERDTreeToggle<CR>
 
@@ -107,7 +108,9 @@ let g:NERDTreeWinPos = "left"
 set t_Co=256
 syntax enable
 set background=dark
-let g:solarized_termcolors=16
+set background=light
+" let g:solarized_termcolors=16
+let g:solarized_termcolors=256
 let g:solarized_visibility="high"
 let g:solarized_diffmode="high"
 set list
