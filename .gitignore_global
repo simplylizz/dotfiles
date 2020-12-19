@@ -1,5 +1,5 @@
 .vscode
-.sw[po]
+.*.sw[po]
 .venv
 
 .idea
