@@ -10,7 +10,7 @@ brew install \
     fd \
     fzf \
     git \
-    gitk \
+    git-gui \
     go \
     jump \
     mdcat \
