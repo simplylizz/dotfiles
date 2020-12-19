@@ -1,8 +1,0 @@
-@xscreensaver -no-splash
-@lxpanel --profile LXDE
-@pcmanfm --desktop --profile LXDE
-@/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-@setxkbmap -option grp:switch,grp:caps_toggle,grp_led:caps us,ru
-@lxterminal
-@firefox
-@skype
