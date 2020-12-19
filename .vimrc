@@ -198,3 +198,5 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
 " Required to use os x clipboard
 set clipboard=unnamed
+
+set rtp+=/usr/local/opt/fzf
