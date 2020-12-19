@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export ZSH_DISABLE_COMPFIX=true
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
