@@ -1,7 +1,7 @@
 [user]
 	name = Anton Yanchenko
 	email = simplylizz@gmail.com
+[pager]
+	branch = true
 [core]
-	editor = /usr/bin/vim
-[push]
-	default = simple
+	excludesfile = ~/.gitignore_global
