@@ -17,3 +17,5 @@ brew install \
     rg \
     vim \
 
+# otherwise ctrl+r won't work
+$(brew --prefix)/opt/fzf/install
