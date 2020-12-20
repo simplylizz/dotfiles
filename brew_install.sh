@@ -1,8 +1,8 @@
 #!/bin/sh
 
-set -e
+set -eo pipefail
 
-# Hmm, it has even iterm2. Should I install it through it though?
+# Hmm, it even has iterm2. Should I install it through it though?
 # More cli tools to check:
 # https://devzen.ru/episode-0312/
 brew install \

@@ -4,7 +4,7 @@ set -eo pipefail
 
 # TODO: add backups
 
-git submodule update --init --recursive
+./brew_install.sh
 
 files=(
   .config
