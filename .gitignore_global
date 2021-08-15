@@ -1,5 +1,8 @@
 .vscode
 .*.sw[po]
 .venv
+venv
 
 .idea
+
+.DS_Store

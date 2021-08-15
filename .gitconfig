@@ -5,3 +5,11 @@
 	branch = true
 [core]
 	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[credential]
+	helper = osxkeychain
+[pull]
+	ff = only
+[init]
+	defaultBranch = master
