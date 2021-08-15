@@ -82,5 +82,8 @@ bindkey '^R' history-incremental-pattern-search-backward
 eval "$(jump shell)"
 
 alias ls="exa"
+alias rc="rg --color always"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $HOME/.cargo/env
