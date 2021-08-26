@@ -87,3 +87,5 @@ alias rc="rg --color always"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.cargo/env
+
+alias g="git"
