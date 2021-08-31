@@ -12,6 +12,7 @@ brew install \
     git \
     git-gui \
     go \
+    htop \
     jump \
     mdcat \
     rg \
