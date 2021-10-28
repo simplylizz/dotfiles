@@ -6,6 +6,7 @@ set -eo pipefail
 # More cli tools to check:
 # https://devzen.ru/episode-0312/
 brew install \
+    dive \
     exa \
     fd \
     fzf \
@@ -16,7 +17,9 @@ brew install \
     jump \
     mdcat \
     rg \
+    telnet \
     vim \
+    watch \
 
 # otherwise ctrl+r won't work
 $(brew --prefix)/opt/fzf/install
