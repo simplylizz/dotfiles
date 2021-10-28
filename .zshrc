@@ -89,3 +89,4 @@ alias rc="rg --color always"
 source $HOME/.cargo/env
 
 alias g="git"
+alias k="kubectl"
