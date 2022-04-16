@@ -14,7 +14,6 @@ Plugin 'micha/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
-Plugin 'zxqfl/tabnine-vim'
 
 let g:pymode_folding = 0
 "let g:pymode_lint = 0  " temp attempt to fix hangs :(
