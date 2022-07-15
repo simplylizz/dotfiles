@@ -46,8 +46,6 @@ __git_ps1 ()
 RPS1="(%*) %(?.:).:()"
 PS1="[$(print '%{\e[1;34m%}%n%{\e[0m%}@%{\e[1;34m%}%M%{\e[0m%}') %~]$ "
 
-export XDG_CONFIG_HOME="$HOME/.config"
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 

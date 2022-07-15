@@ -7,7 +7,6 @@ set -eo pipefail
 ./brew_install.sh
 
 files=(
-  .config
   .gitconfig
   .gitignore_global
   .vimrc
