@@ -30,3 +30,5 @@ ln -sfv $path/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.i
 
 mkdir -p ~/.ssh
 ln -sfv $path/.ssh/config ~/.ssh/
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
