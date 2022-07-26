@@ -86,6 +86,7 @@ eval "$(jump shell)"
 
 alias ls="exa"
 alias rc="rg --color always"
+export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

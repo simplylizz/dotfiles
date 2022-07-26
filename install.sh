@@ -12,6 +12,7 @@ files=(
   .vimrc
   .zshrc
   .zshrc.custom
+  .ripgreprc
 )
 path=`pwd`
 for f in "${files[@]}"; do
