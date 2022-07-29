@@ -1,13 +1,9 @@
-# Don't let ripgrep vomit really long lines to my terminal, and show a preview.
---max-columns=150
+# Don't spew really long lines to terminal
+--max-columns=300
 --max-columns-preview
 
 # Using glob patterns to include/exclude files or folders
---glob=!git/*
-
-# or
---glob
-!git/*
+--glob=!.git/*
 
 # Set the colors.
 --colors=line:none
