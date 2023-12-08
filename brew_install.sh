@@ -17,7 +17,7 @@ brew install \
     mdcat \
     rg \
     telnet \
-    vim \
+    neovim \
     watch \
 
 # otherwise ctrl+r won't work
