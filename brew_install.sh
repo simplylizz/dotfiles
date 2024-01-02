@@ -61,5 +61,7 @@ echo 'function rc --wraps='rg --color always' --description 'alias rc=rg --color
   rg --color always $argv;
 end' > "$fpath/rc.fish"
 
-sudo echo $(which fish) >> /etc/shells
-chsh -s $(which fish)
+if ! grep -q fish /etc/shells; then
+  sudo echo $(which fish) >> /etc/shells
+  chsh -s $(which fish)
+fi
