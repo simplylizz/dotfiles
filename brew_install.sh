@@ -20,6 +20,8 @@ brew install \
     neovim \
     watch \
     fish \
+    jq \
+    jless \
 
 # otherwise ctrl+r won't work
 $(brew --prefix)/opt/fzf/install
