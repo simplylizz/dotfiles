@@ -29,12 +29,11 @@ $(brew --prefix)/opt/fzf/install
 fconfig="$HOME/.config/fish/config.fish"
 
 if ! grep -q 'homebrew' "$fconfig"; then
-  echo '
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"
+
 if status is-interactive
   jump shell fish | source
 end
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$PATH:$HOME/go/bin:$HOME/.docker/bin"
 export ENV_TYPE=dev
