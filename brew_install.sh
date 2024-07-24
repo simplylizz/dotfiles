@@ -6,7 +6,7 @@ set -eo pipefail
 # https://devzen.ru/episode-0312/
 brew install \
     dive \
-    exa \
+    eza \
     fd \
     fzf \
     git \
@@ -50,8 +50,8 @@ echo 'function k --wraps=kubectl --description '\''alias k=kubectl'\''
   kubectl $argv; 
 end' > "$fpath/k.fish"
 
-echo 'function ls --wraps=exa --description '\''alias ls=exa'\''
-  exa $argv; 
+echo 'function ls --wraps=eza --description '\''alias ls=eza'\''
+  eza $argv; 
 end' > "$fpath/ls.fish"
 
 echo 'function rc --wraps=rg --description '\''alias rc=rg --color always'\''

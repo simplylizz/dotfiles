@@ -84,7 +84,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 eval "$(jump shell)"
 
-alias ls="exa"
+alias ls="eza"
 alias rc="rg --color always"
 export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
 
