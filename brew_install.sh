@@ -22,6 +22,11 @@ brew install \
     fish \
     jq \
     jless \
+    gemini-cli \
+
+brew install --cask \
+    claude-code \
+    codex \
 
 # otherwise ctrl+r won't work
 $(brew --prefix)/opt/fzf/install
