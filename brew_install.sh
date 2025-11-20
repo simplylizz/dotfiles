@@ -59,6 +59,6 @@ echo 'function rc --wraps=rg --description '\''alias rc=rg --color always'\''
 end' > "$fpath/rc.fish"
 
 if ! grep -q fish /etc/shells; then
-  sudo echo $(which fish) >> /etc/shells
+  echo "$(which fish)" | sudo tee -a /etc/shells
   chsh -s $(which fish)
 fi
