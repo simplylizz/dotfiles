@@ -1,8 +1,11 @@
 .vscode
-.*.sw[po]
+*.sw[po]
 .venv
 venv
 
 .idea
 
 .DS_Store
+
+.aider*
+.claude
