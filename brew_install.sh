@@ -23,6 +23,7 @@ brew install \
     jq \
     jless \
     gemini-cli \
+    ccusage \
 
 brew install --cask \
     claude-code \
