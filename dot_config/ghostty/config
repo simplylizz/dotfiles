@@ -1,0 +1,23 @@
+# Colors
+background = 282c34
+foreground = ffffff
+
+background-opacity = 0.9
+
+# Font: set your font family (fallbacks allowed)
+font-family = "JetBrains Mono"
+font-family-bold = "JetBrains Mono Bold"
+font-family-italic = "JetBrains Mono Italic"
+font-family-bold-italic = "JetBrains Mono Bold Italic"
+
+# Adjust cell dimensions (relative to the font)
+adjust-cell-width = 0
+adjust-cell-height = 0
+
+# Clipboard / selection
+copy-on-select = true
+selection-clear-on-typing = true
+selection-clear-on-copy = false
+
+# Shell integration
+shell-integration = detect
