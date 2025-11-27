@@ -5,26 +5,26 @@ set -eo pipefail
 # More cli tools to check:
 # https://devzen.ru/episode-0312/
 brew install \
+    ccusage \
     dive \
     eza \
     fd \
+    fish \
     fzf \
+    gemini-cli \
+    gh \
     git \
     git-gui \
     go \
     htop \
+    jless \
+    jq \
     jump \
     mdcat \
+    neovim \
     rg \
     telnet \
-    neovim \
     watch \
-    fish \
-    jq \
-    jless \
-    gh \
-    gemini-cli \
-    ccusage \
 
 brew install --cask \
     claude-code \
