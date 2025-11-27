@@ -22,6 +22,7 @@ brew install \
     fish \
     jq \
     jless \
+    gh \
     gemini-cli \
     ccusage \
 
