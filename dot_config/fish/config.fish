@@ -6,3 +6,5 @@ end
 
 export PATH="$PATH:$HOME/go/bin:$HOME/.docker/bin"
 export ENV_TYPE=dev
+
+test -f ~/.secrets && source ~/.secrets
