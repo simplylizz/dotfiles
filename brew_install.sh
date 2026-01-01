@@ -24,6 +24,7 @@ brew install \
     neovim \
     rg \
     telnet \
+    uv \
     watch \
 
 brew install --cask \
