@@ -22,6 +22,7 @@ brew install \
     jump \
     mdcat \
     neovim \
+    pre-commit \
     rg \
     telnet \
     uv \
