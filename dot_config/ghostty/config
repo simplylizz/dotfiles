@@ -25,6 +25,7 @@ keybind = cmd+left=previous_tab
 keybind = cmd+right=next_tab
 
 # Window
+window-inherit-working-directory = true
 window-save-state = always
 quit-after-last-window-closed = true
 window-decoration = true
@@ -40,8 +41,8 @@ mouse-hide-while-typing = true
 macos-option-as-alt = true
 macos-titlebar-style = tabs
 
-# Scrollback
-scrollback-limit = 100000
+# Scrollback (limit is in bytes, not lines)
+scrollback-limit = 100000000
 
 # Shell integration (no-cursor to respect cursor-style setting)
 shell-integration = detect
